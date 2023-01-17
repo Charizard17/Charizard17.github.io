@@ -10,7 +10,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 a {
@@ -18,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-/* @font-face {
-  font-family: 'notoserif';
-  src: url("public/fonts/NotoSerif-Regular.ttf");
-} */
+@font-face {
+  font-family: NotoSerif;
+  src: url("../../public/NotoSerif.ttf");
+}
