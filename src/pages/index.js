@@ -21,7 +21,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black px-10">
+      <main className="bg-black px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl text-yellow-300">Charizard17</h1>
@@ -40,11 +40,20 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 text-yellow-300">
-            <h2 className="text-5xl py-2 text-orange-500 font-medium">
+            <div className="mx-auto bg-gradient-to-b from-gray-100 rounded-full w-60 h-60 relative overflow-hidden mt-20">
+              <Image
+                src={ProfilePictureWithoutBG}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <h2 className="text-5xl py-2 text-orange-500 font-medium md:text-6xl">
               Esad Dursun
             </h2>
-            <h3 className="text-2xl py-2">Self-taught Software Engineer</h3>
-            <p className="text-md py-5 leading-8 text-yellow-100">
+            <h3 className="text-2xl py-2 md:text-3xl">
+              Self-taught Software Engineer
+            </h3>
+            <p className="text-md py-5 leading-8 text-yellow-100 md:text-xl max-w-lg mx-auto">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Consequuntur deserunt minima officiis, blanditiis impedit hic
               rerum nihil laborum neque facilis voluptate cupiditate incidunt
@@ -54,13 +63,6 @@ export default function Home() {
           <div className="flex justify-center gap-16 py-3 text-yellow-300 text-5xl">
             <AiFillLinkedin />
             <AiFillGithub />
-          </div>
-          <div className="mx-auto bg-gradient-to-b from-gray-100 rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96">
-            <Image
-              src={ProfilePictureWithoutBG}
-              layout="fill"
-              objectFit="cover"
-            />
           </div>
         </section>
         <section>
@@ -73,8 +75,8 @@ export default function Home() {
               consequatur itaque voluptas. Animi?
             </p>
           </div>
-          <div className="text-center p-10 bg-gray-800 text-yellow-300 shadow-lg rounded-xl my-10">
-            <div>
+          <div className="lg:flex gap-10">
+            <div className="text-center p-10 bg-gray-800 text-yellow-300 shadow-lg rounded-xl my-10">
               <Image src={TempImage} width={100} height={100} />
               <h3>Lorem, ipsum.</h3>
               <p>
@@ -87,8 +89,8 @@ export default function Home() {
               <p className="text-gray-300 py-1">Figma</p>
             </div>
           </div>
-          <div className="text-center p-10 bg-gray-800 text-yellow-300 shadow-lg rounded-xl my-10">
-            <div>
+          <div className="lg:flex gap-10">
+            <div className="text-center p-10 bg-gray-800 text-yellow-300 shadow-lg rounded-xl my-10">
               <Image src={TempImage} width={100} height={100} />
               <h3>Lorem, ipsum.</h3>
               <p>
@@ -101,8 +103,8 @@ export default function Home() {
               <p className="text-gray-300 py-1">Figma</p>
             </div>
           </div>
-          <div className="text-center p-10 bg-gray-800 text-yellow-300 shadow-lg rounded-xl my-10">
-            <div>
+          <div className="lg:flex gap-10">
+            <div className="text-center p-10 bg-gray-800 text-yellow-300 shadow-lg rounded-xl my-10">
               <Image src={TempImage} width={100} height={100} />
               <h3>Lorem, ipsum.</h3>
               <p>
@@ -127,15 +129,15 @@ export default function Home() {
               consectetur adipisicing elit. Ratione, hic?
             </p>
           </div>
-          <div>
-            <div>
-              <Image src={TempImage} />
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="flex-1">
+              <Image src={TempImage} className="rounded-lg m-auto" />
             </div>
-            <div>
-              <Image src={TempImage} />
+            <div className="flex-1">
+              <Image src={TempImage} className="rounded-lg m-auto" />
             </div>
-            <div>
-              <Image src={TempImage} />
+            <div className="flex-1">
+              <Image src={TempImage} className="rounded-lg m-auto" />
             </div>
           </div>
         </section>
