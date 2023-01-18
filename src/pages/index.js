@@ -1,13 +1,7 @@
 import Head from "next/head";
 import {BsFillMoonStarsFill} from "react-icons/bs";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-  AiFillGithub,
-} from "react-icons/ai";
+import {AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/image";
-import ProfilePictureWithoutBG from "../../public/images/profile_picture_without_background.png";
 import TempImage from "../../public/images/temp_image.png";
 
 export default function Home() {
@@ -41,11 +35,7 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 text-yellow-300">
             <div className="mx-auto bg-gradient-to-b from-gray-100 rounded-full w-60 h-60 relative overflow-hidden mt-20">
-              <Image
-                src={ProfilePictureWithoutBG}
-                layout="fill"
-                objectFit="cover"
-              />
+              <Image src={TempImage} layout="fill" objectFit="cover" />
             </div>
             <h2 className="text-5xl py-2 text-orange-500 font-medium md:text-6xl">
               Esad Dursun
