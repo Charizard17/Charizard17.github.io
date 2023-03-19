@@ -1,43 +1,36 @@
 export const projects = [
   {
-    title: "MERN Memories",
+    title: "Chest Escape",
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: "/images/1.png",
-    tags: ["Mongo", "Express", "React", "Node"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "In this game, you have to try to escape from the boxes that come towards you. As the game level progresses, more boxes will start coming towards you. The last level is the hardest. There is only 1 space to escape from other boxes.",
+    image: "/images/chestEscape.png",
+    tags: ["Flutter", "Dart", "Flame"],
+    source:
+      "https://play.google.com/store/apps/details?id=com.charilab.chest_escape",
+    visit: "https://github.com/Charizard17/chest_escape",
     id: 0,
   },
   {
-    title: "E-Commerce",
+    title: "Satoshi Nakamoto's Bitcoins",
     description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: "/images/2.png",
-    tags: ["React", "JavaScript"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "This app is a money spend simulator and with it you have all the Bitcoins of Satoshi Nakamoto, which is more than 1,1 million Bitcoins. You can buy a house, a Ferrari, or a luxury yacht. Spend them as you wish!",
+    image: "/images/spend-satoshis-bitcoins.png",
+    tags: ["Dart", "Flutter", "CoinGecko"],
+    source:
+      "https://play.google.com/store/apps/details?id=com.spend_satoshis_bitcoins",
+    visit: "https://github.com/Charizard17/spend_satoshis_bitcoins",
     id: 1,
   },
   {
-    title: "WebRTC App",
+    title: "Bit Holdings: Portfolio Track",
     description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: "/images/3.jpg",
-    tags: ["React", "WebRTC"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "This app is a mobile portfolio tracking app for cryptocurrencies. It fetchs realtime cryptocurrency prices from CoinGecko. Since I stopped developing it Google removed it from the Google Play Store, but you can visit its github repository.",
+    image: "/images/bitholdings.png",
+    tags: ["Dart", "Flutter", "Firebase", "CoinGecko"],
+    source:
+      "https://play.google.com/store/apps/details?id=com.charilab.bit_holdings_app",
+    visit: "https://github.com/Charizard17/bit_holdings_app",
     id: 2,
-  },
-  {
-    title: "Unichat",
-    description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: "/images/4.jpg",
-    tags: ["React", "ChatEngine", "Firebase"],
-    source: "https://google.com",
-    visit: "https://google.com",
-    id: 3,
   },
 ]
 
