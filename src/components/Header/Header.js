@@ -1,8 +1,7 @@
 import Link from "next/link"
+import Image from "next/image"
 import React from "react"
 import {AiFillGithub, AiFillInstagram, AiFillLinkedin} from "react-icons/ai"
-import {DiCssdeck} from "react-icons/di"
-
 import {
   Container,
   Div1,
@@ -12,6 +11,7 @@ import {
   SocialIcons,
   Span,
 } from "./HeaderStyles"
+import image from "../../../public/images/charizard-icon.png"
 
 const Header = () => (
   <Container>
@@ -22,12 +22,13 @@ const Header = () => (
             style={{
               display: "flex",
               alignItems: "center",
-              color: "white",
               marginBottom: "-5px",
+              cursor: "pointer",
             }}
-          ></a>
-          <DiCssdeck size="3rem" />
-          <Span>Portfolio</Span>
+          >
+            <Image src={image} width="40" height="40" />
+            <Span>&shy; Portfolio</Span>
+          </a>
         </div>
       </Link>
     </Div1>
