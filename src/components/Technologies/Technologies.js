@@ -20,8 +20,10 @@ const Technologies = () => (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero atque
-      dolores quos suscipit et.
+      Technologies I'm familiar with:
+      <br />
+      JavaScript, HTML, CSS, Dart, Flutter, NodeJS, AWS, Ionic, Angular, React,
+      REST API, SQL, Socket.IO, Firebase
     </SectionText>
     <List>
       <ListItem>
@@ -30,17 +32,7 @@ const Technologies = () => (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiFirebase size="3rem" />
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
+            Flutter, Angular, React, Ionic
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -50,7 +42,17 @@ const Technologies = () => (
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
             Experience with <br />
-            tools like Figma
+            tools like Sketch and Figma
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <DiFirebase size="3rem" />
+        <ListContainer>
+          <ListTitle>Back-End</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            Node.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
