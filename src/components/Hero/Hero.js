@@ -8,18 +8,19 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Welcome To <br />
-        My Personal Portfolio
+        Hello 👋
+        <br />
+        I'm Esad
       </SectionTitle>
       <SectionText>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem aliquid
-        aspernatur ex eius ipsa ducimus enim ullam? Et quo cupiditate
-        repudiandae, vel in ullam consequuntur voluptas iste corporis, nihil
-        porro.
+        I am a self-taught Software Engineer, experienced mostly Frontend
+        development and interested in JavaScript, Flutter and AWS Cloud
+        technologies. I am eager to learn new technologies and love to improve
+        my skills in these areas.
       </SectionText>
-      <Button onClick={() => (window.location = "https://google.com")}>
+      {/* <Button onClick={() => (window.location = "my-website")}>
         Learn More
-      </Button>
+      </Button> */}
     </LeftSection>
   </Section>
 )

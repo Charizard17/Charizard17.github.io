@@ -67,9 +67,15 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae repellat
-        recusandae, soluta blanditiis expedita harum itaque. Harum, adipisci!
-        Quidem magnam, pariatur odio iste dicta sed.
+        Some detailed info about myself. I have a Bachelor degree in mechanical
+        engineering. I am mostly experienced in Frontend development with
+        technologies like JavaScript, HTML, CSS and Flutter. Besides I have also
+        some experience in Backend technologies such as Node.js.
+        <br />
+        In addition, I like solving problems on platforms like CodeWars or
+        Leetcode to improve my knowledge on data structures and algorithms. I
+        have also some personal experience with cloud development such as AWS
+        and currently own the AWS Certified Cloud Practitioner certificate.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
