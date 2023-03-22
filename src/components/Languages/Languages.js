@@ -9,7 +9,7 @@ import {Box, Boxes, BoxNum, BoxText} from "./LanguagesStyles"
 import {languages} from "../../constants/constants"
 
 const Languages = () => (
-  <Section>
+  <Section id="languages">
     <SectionTitle>Languages</SectionTitle>
     <Boxes>
       {languages.map((card, index) => (
