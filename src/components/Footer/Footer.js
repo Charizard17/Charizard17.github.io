@@ -20,15 +20,15 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:123-456-7890">123-456-7890</LinkItem>
+          <LinkItem href="tel:+4917658867810">+4917658867810</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mail:test@mail.com">test@mail.com</LinkItem>
+          <LinkItem href="mail:3723esad@gmail.com">3723esad@gmail.com</LinkItem>
         </LinkColumn>
-        <SocialIconsContainer>
-          <Slogan>Innovating one project at a time</Slogan>
-        </SocialIconsContainer>
+        {/* <SocialIconsContainer>
+          <Slogan>Lorem ipsum, dolor sit amet consectetur adipisicing.</Slogan>
+        </SocialIconsContainer> */}
         <SocialContainer>
           <SocialIcons href="https://github.com/charizard17">
             <AiFillGithub size="3rem" />
