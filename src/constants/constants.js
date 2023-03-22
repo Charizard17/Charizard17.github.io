@@ -51,3 +51,10 @@ export const acomplishments = [
   {number: 1900, text: "Github Followers"},
   {number: 5000, text: "Github Stars"},
 ]
+
+export const languages = [
+  {level: "Native", text: "Turkish"},
+  {level: "B2", text: "English"},
+  {level: "B2", text: "German"},
+  {level: "A1", text: "Spanish"},
+]

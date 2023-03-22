@@ -4,6 +4,7 @@ import Hero from "../components/Hero/Hero"
 import Projects from "../components/Projects/Projects"
 import Technologies from "../components/Technologies/Technologies"
 import Timeline from "../components/TimeLine/TimeLine"
+import Languages from "../components/Languages/Languages"
 import {Layout} from "../layout/Layout"
 import {Section} from "../styles/GlobalComponents"
 
@@ -18,6 +19,7 @@ const Home = () => {
       <Technologies />
       <Timeline />
       {/* <Acomplishments /> */}
+      <Languages />
     </Layout>
   )
 }
