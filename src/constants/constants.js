@@ -1,14 +1,13 @@
 export const projects = [
   {
-    title: "Chest Escape",
+    title: "Gravity Bridge Portal",
     description:
-      "In this game, you have to try to escape from the boxes that come towards you. As the game level progresses, more boxes will start coming towards you. The last level is the hardest. There is only 1 space to escape from other boxes.",
-    image: "/images/chestEscape.png",
-    tags: ["Flutter", "Dart", "Flame"],
-    source:
-      "https://play.google.com/store/apps/details?id=com.charilab.chest_escape",
-    visit: "https://github.com/Charizard17/chest_escape",
-    id: 0,
+      "This is an asset swap portal which you can transfer tokens, coins etc. between Ethereum and the Cosmos ecosystem. ",
+    image: "/images/gravity-bridge-portal.png",
+    tags: ["Dart", "Flutter", "Blockchain", "Ethers.js", "CosmJS"],
+    source: "https://bridge.blockscape.network",
+    visit: "https://github.com/BlockscapeNetwork/gravity-bridge-portal-flutter",
+    id: 100,
   },
   {
     title: "Satoshi Nakamoto's Bitcoins",
@@ -19,7 +18,18 @@ export const projects = [
     source:
       "https://play.google.com/store/apps/details?id=com.spend_satoshis_bitcoins",
     visit: "https://github.com/Charizard17/spend_satoshis_bitcoins",
-    id: 1,
+    id: 103,
+  },
+  {
+    title: "Chest Escape",
+    description:
+      "In this game, you have to try to escape from the boxes that come towards you. As the game level progresses, more boxes will start coming towards you. The last level is the hardest. There is only 1 space to escape from other boxes.",
+    image: "/images/chest-escape.png",
+    tags: ["Flutter", "Dart", "Flame"],
+    source:
+      "https://play.google.com/store/apps/details?id=com.charilab.chest_escape",
+    visit: "https://github.com/Charizard17/chest_escape",
+    id: 102,
   },
   {
     title: "Bit Holdings: Portfolio Track",
@@ -30,7 +40,17 @@ export const projects = [
     source:
       "https://play.google.com/store/apps/details?id=com.charilab.bit_holdings_app",
     visit: "https://github.com/Charizard17/bit_holdings_app",
-    id: 2,
+    id: 104,
+  },
+  {
+    title: "Who Am I?",
+    description:
+      "This is the online version of classic 'Who Am I?' game. Each player has a character and tries to guess it.",
+    image: "/images/who-am-i.png",
+    tags: ["JavaScript", "Ionic", "Angular", "Node.js", "Socket.io"],
+    source: "https://play-whoami.com/",
+    visit: "",
+    id: 105,
   },
 ]
 
