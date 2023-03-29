@@ -52,6 +52,16 @@ export const projects = [
     visit: "",
     id: 105,
   },
+  {
+    title: "YouTubeV2 - YouTube Clone",
+    description:
+      "This is a clone of YouTube, which you can use basic features like search content, open and watch videos, select categories etc.",
+    image: "/images/youtubev2.png",
+    tags: ["React JS", "Material UI", "RapidAPI"],
+    source: "https://kaleidoscopic-dieffenbachia-3c4421.netlify.app",
+    visit: "https://github.com/Charizard17/youtube-clone-with-reactjs",
+    id: 106,
+  },
 ]
 
 export const TimeLineData = [
