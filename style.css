@@ -51,7 +51,7 @@ ul {
 nav {
   position: sticky;
   top: 0;
-  background-color: #94c9a9;
+  background-color: #4c5270;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -62,30 +62,27 @@ nav {
 }
 
 nav a {
-  color: #333;
-  padding: 15px;
-  margin-right: 20px;
-}
-
-nav a:last-child {
-  margin-right: 0;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 nav a:hover {
-  background-color: #c6ecae;
+  color: #f652a0;
+  box-shadow: inset 0px 0px 0px 1px #f652a0;
 }
 
 /* Main container styles */
 section {
-  margin-bottom: 50px;
+  padding-top: 80px;
 }
 
-#about-me {
-  margin-top: 20px;
+section:last-child {
+  margin-bottom: 100px;
 }
 
 .resume-link {
-  background-color: #d5573b;
+  background-color: #f652a0;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -93,7 +90,7 @@ section {
 }
 
 .resume-link:hover {
-  background-color: #885053;
+  background-color: red;
 }
 
 #projects h2 {
@@ -108,7 +105,7 @@ section {
 }
 
 .project-card {
-  background-color: #c6ecae;
+  background-color: #36eee0;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -136,7 +133,7 @@ section {
 }
 
 .project-links a {
-  background-color: #d5573b;
+  background-color: #f652a0;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -149,13 +146,13 @@ section {
 
 .project-links a:hover {
   opacity: 0.8;
-  background-color: #885053;
+  background-color: red;
 }
 
 /* Footer styles */
 footer {
   display: flex;
-  background-color: #777da7;
+  background-color: #4c5270;
   align-items: center;
   color: #fff;
   padding: 20px;
@@ -181,7 +178,7 @@ footer a {
 }
 
 .contact-info a:hover {
-  color: #c6ecae;
+  color: #f652a0;
 }
 
 .spacer {
@@ -208,5 +205,5 @@ footer a {
 }
 
 .social-icons i:hover {
-  color: #c6ecae;
+  color: #f652a0;
 }
