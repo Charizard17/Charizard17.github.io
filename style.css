@@ -51,7 +51,7 @@ ul {
 nav {
   position: sticky;
   top: 0;
-  background-color: #f1f7b5;
+  background-color: #94c9a9;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,8 +72,7 @@ nav a:last-child {
 }
 
 nav a:hover {
-  background-color: #fd8a8a;
-  color: #fff;
+  background-color: #c6ecae;
 }
 
 /* Main container styles */
@@ -86,7 +85,7 @@ section {
 }
 
 .resume-link {
-  background-color: #fd8a8a;
+  background-color: #d5573b;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -94,7 +93,7 @@ section {
 }
 
 .resume-link:hover {
-  background-color: #f675a8;
+  background-color: #885053;
 }
 
 #projects h2 {
@@ -109,7 +108,7 @@ section {
 }
 
 .project-card {
-  background-color: #e5e0ff;
+  background-color: #c6ecae;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -137,7 +136,7 @@ section {
 }
 
 .project-links a {
-  background-color: #fd8a8a;
+  background-color: #d5573b;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -150,13 +149,13 @@ section {
 
 .project-links a:hover {
   opacity: 0.8;
-  background-color: #f675a8;
+  background-color: #885053;
 }
 
 /* Footer styles */
 footer {
   display: flex;
-  background-color: #554994;
+  background-color: #777da7;
   align-items: center;
   color: #fff;
   padding: 20px;
@@ -178,10 +177,11 @@ footer a {
 
 .contact-info a {
   width: 210px;
+  cursor: pointer;
 }
 
 .contact-info a:hover {
-  color: #f675a8;
+  color: #c6ecae;
 }
 
 .spacer {
@@ -208,5 +208,5 @@ footer a {
 }
 
 .social-icons i:hover {
-  color: #f675a8;
+  color: #c6ecae;
 }
