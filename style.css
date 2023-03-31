@@ -51,7 +51,7 @@ ul {
 nav {
   position: sticky;
   top: 0;
-  background-color: #f8d7da;
+  background-color: #f1f7b5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,7 +72,7 @@ nav a:last-child {
 }
 
 nav a:hover {
-  background-color: #c82333;
+  background-color: #fd8a8a;
   color: #fff;
 }
 
@@ -86,11 +86,15 @@ section {
 }
 
 .resume-link {
-  background-color: #c82333;
+  background-color: #fd8a8a;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   margin-right: 10px;
+}
+
+.resume-link:hover {
+  background-color: #f675a8;
 }
 
 #projects h2 {
@@ -105,7 +109,7 @@ section {
 }
 
 .project-card {
-  background-color: #f8d7da;
+  background-color: #e5e0ff;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -133,7 +137,7 @@ section {
 }
 
 .project-links a {
-  background-color: #c82333;
+  background-color: #fd8a8a;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -146,12 +150,13 @@ section {
 
 .project-links a:hover {
   opacity: 0.8;
+  background-color: #f675a8;
 }
 
 /* Footer styles */
 footer {
   display: flex;
-  background-color: #333;
+  background-color: #554994;
   align-items: center;
   color: #fff;
   padding: 20px;
@@ -176,7 +181,7 @@ footer a {
 }
 
 .contact-info a:hover {
-  color: wheat;
+  color: #f675a8;
 }
 
 .spacer {
@@ -203,5 +208,5 @@ footer a {
 }
 
 .social-icons i:hover {
-  color: wheat;
+  color: #f675a8;
 }
