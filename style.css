@@ -1,0 +1,207 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  padding: 0 40px;
+}
+
+/* .container {
+  max-width: 1100px;
+  margin: 0 auto;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+li,
+p {
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar styles */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #f8d7da;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: #333;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:hover {
+  background-color: #c82333;
+  color: #fff;
+}
+
+/* Main container styles */
+section {
+  margin-bottom: 50px;
+}
+
+#about-me {
+  margin-top: 20px;
+}
+
+.resume-link {
+  background-color: #c82333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#projects h2 {
+  display: block;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #f8d7da;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 40%;
+}
+
+.project-card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details h3 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.project-links {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.project-links a {
+  background-color: #c82333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.project-links a:last-child {
+  margin-right: 0;
+}
+
+.project-links a:hover {
+  opacity: 0.8;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  background-color: #333;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid white;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-info a {
+  width: 210px;
+}
+
+.contact-info a:hover {
+  color: wheat;
+}
+
+.spacer {
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 5px;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+.social-icons i {
+  font-size: 32px;
+}
+
+.social-icons i:hover {
+  color: wheat;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esad's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="#about-me">About Me</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#technologies">Technologies</a>
+      <a href="#languages">Languages</a>
+    </nav>
+
+    <!-- Main Container -->
+    <main>
+      <section id="about-me">
+        <h1>
+          Hello 👋
+          <br />
+          I'm Esad
+        </h1>
+        <p>
+          I am a self-taught Software Engineer, experienced mostly Frontend
+          development and interested in JavaScript, Flutter and AWS Cloud
+          technologies. I am eager to learn new technologies and love to improve
+          my skills in these areas.
+        </p>
+      </section>
+
+      <section id="resume">
+        <h2>Resume</h2>
+        <p>
+          You can view or download my latest resume by clicking the button
+          below.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/11-PJumJE4YTnBSK4EKjhcgCFRTH1vjog/view?usp=sharing"
+          target="_blank"
+          class="resume-link"
+        >
+          View resume
+        </a>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img
+              src="assets/gravity-bridge-portal.png"
+              alt="Gravity Bridge Portal"
+            />
+            <div class="project-details">
+              <h3>Gravity Bridge Portal</h3>
+              <p>
+                This is an asset swap portal which you can transfer tokens,
+                coins etc. between Ethereum and the Cosmos ecosystem.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> Dart, Flutter, Blockchain,
+                Ethers.js, CosmJS
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/BlockscapeNetwork/gravity-bridge-portal-flutter"
+                  target="_blank"
+                  >View Codebase</a
+                >
+                <a href="https://bridge.blockscape.network" target="_blank"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="assets/spend-satoshis-bitcoins.png"
+              alt="Satoshi Nakamoto's Bitcoins"
+            />
+            <div class="project-details">
+              <h3>Satoshi Nakamoto's Bitcoins</h3>
+              <p>
+                This app is a money spend simulator and with it you have all the
+                Bitcoins of Satoshi Nakamoto, which is more than 1,1 million
+                Bitcoins. You can buy a house, a Ferrari, or a luxury yacht.
+                Spend them as you wish!
+              </p>
+              <p><strong>Tech Stack:</strong> Dart, Flutter, CoinGecko</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Charizard17/spend_satoshis_bitcoins"
+                  target="_blank"
+                  >View Codebase</a
+                >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.spend_satoshis_bitcoins"
+                  target="_blank"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/chest-escape.png" alt="Chest Escape" />
+            <div class="project-details">
+              <h3>Chest Escape</h3>
+              <p>
+                In this game, you have to try to escape from the boxes that come
+                towards you. As the game level progresses, more boxes will start
+                coming towards you. The last level is the hardest. There is only
+                1 space to escape from other boxes.
+              </p>
+              <p><strong>Tech Stack:</strong> Dart, Flutter, Flame Engine</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Charizard17/chest_escape"
+                  target="_blank"
+                  >View Codebase</a
+                >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.charilab.chest_escape"
+                  target="_blank"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="assets/bitholdings.png"
+              alt="Bit Holdings: Portfolio Track"
+            />
+            <div class="project-details">
+              <h3>Bit Holdings: Portfolio Track</h3>
+              <p>
+                This app is a mobile portfolio tracking app for
+                cryptocurrencies. It fetchs realtime cryptocurrency prices from
+                CoinGecko. Since I stopped developing it Google removed it from
+                the Google Play Store, but you can visit its github repository.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> Dart, Flutter, Firebase, CoinGecko
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Charizard17/bit_holdings_app"
+                  target="_blank"
+                  >View Codebase</a
+                >
+                <!-- <a
+                  href="https://play.google.com/store/apps/details?id=com.charilab.bit_holdings_app"
+                  target="_blank"
+                  >View Source</a
+                > -->
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/who-am-i.png" alt="Who Am I?" />
+            <div class="project-details">
+              <h3>Who Am I?</h3>
+              <p>
+                This is the online version of classic 'Who Am I?' game. Each
+                player has a character and tries to guess it.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> JavaScript, Ionic, Angular,
+                Node.js, Socket.io
+              </p>
+              <div class="project-links">
+                <!-- <a
+                  href="#"
+                  target="_blank"
+                  >View Codebase</a
+                > -->
+                <a href="https://play-whoami.com" target="_blank"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/youtubev2.png" alt="YouTubeV2 - YouTube Clone" />
+            <div class="project-details">
+              <h3>YouTubeV2 - YouTube Clone</h3>
+              <p>
+                This is a clone of YouTube, which you can use basic features
+                like search content, open and watch videos, select categories
+                etc.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> React JS, Material UI, RapidAPI
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Charizard17/youtube-clone-with-reactjs"
+                  target="_blank"
+                  >View Codebase</a
+                >
+                <a
+                  href="https://kaleidoscopic-dieffenbachia-3c4421.netlify.app"
+                  target="_blank"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technologies">
+        <h2>Tools & Technologies</h2>
+        <p>
+          JavaScript, HTML, CSS, SCSS, Dart, Flutter, Node.js, AWS, Ionic,
+          Angular, React, REST API, SQL, Socket.IO, Firebase, Sketch, Figma
+        </p>
+      </section>
+
+      <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>Turkish <b>Native</b></li>
+          <li>English <b>B2</b></li>
+          <li>German <b>B2</b></li>
+          <li>Spanish <b>A1</b></li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="contact-info">
+        <a href="tel:+4917658867810">Call: +4917658867810</a>
+        <a href="3723esad@gmail.com">Email: 3723esad@gmail.com</a>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/charizard17" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/charizard17" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
