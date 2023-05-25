@@ -77,7 +77,12 @@ nav a:hover {
 
 /* Main container styles */
 section {
-  padding-top: 50px;
+  padding-top: 80px;
+  margin-bottom: -30px;
+}
+
+section:last-child {
+  margin-top: -50px;
 }
 
 section:last-child {
