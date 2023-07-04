@@ -72,6 +72,15 @@ body {
   text-align: left;
 }
 
+.tech-stack b,
+.languages b {
+  margin-right: 20px;
+}
+
+.languages span {
+  color: #777;
+}
+
 .contact-info span {
   margin-right: 40px;
 }
