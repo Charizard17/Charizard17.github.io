@@ -27,6 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
       viewCodebaseLink
     )
 
+    // Add disabled-button class if the source or codebase links are empty
+    const dialogButtons = dialog.querySelectorAll(".dialog-button")
+    if (!viewSourceLink) {
+      dialogButtons[0].classList.add("disabled-button")
+    }
+    if (!viewCodebaseLink) {
+      dialogButtons[1].classList.add("disabled-button")
+    }
+
     // Append the dialog to the document body
     document.body.appendChild(dialog)
 
@@ -73,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="${viewSourceLink}" target="_blank" class="dialog-button">View Source</a>
             <a href="${viewCodebaseLink}" target="_blank" class="dialog-button">View Codebase</a>
           </div>
-          <button class="dialog-close-button" ><i class="fa-regular fa-x"></i></button>
+          <button class="dialog-close-button" ><i class="fa-sharp fa-solid fa-xmark"></i></button>
         `
 
     // Set the content of the dialog
