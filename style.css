@@ -11,6 +11,7 @@ body {
   height: 700px;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .profile {
@@ -34,7 +35,7 @@ body {
 }
 
 .name {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   margin: 0;
 }
@@ -236,17 +237,19 @@ body {
 }
 
 .project-details-dialog-links a:first-child {
-  background-color: green;
+  background-color: blue;
   border-bottom-left-radius: 10px;
+  border-right: 0.5px solid white;
 }
 
 .project-details-dialog-links a:first-child:hover {
-  background-color: darkgreen;
+  background-color: darkblue;
 }
 
 .project-details-dialog-links a:last-child {
   background-color: blue;
   border-bottom-right-radius: 10px;
+  border-left: 0.5px solid white;
 }
 
 .project-details-dialog-links a:last-child:hover {
