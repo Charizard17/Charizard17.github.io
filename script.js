@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="project-details-dialog-text">${projectInfo}</p>
           <p class="project-details-dialog-tech"><strong>Tech Stack:</strong> ${technologies}</p>
           <div class="project-details-dialog-links">
-            <a href="${viewSourceLink}" target="_blank" class="dialog-button">View Source</a>
+            <a href="${viewSourceLink}" target="_blank" class="dialog-button">Explore Product</a>
             <a href="${viewCodebaseLink}" target="_blank" class="dialog-button">View Codebase</a>
           </div>
           <button class="dialog-close-button" ><i class="fa-sharp fa-solid fa-xmark"></i></button>
