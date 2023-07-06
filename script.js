@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectTitle = this.dataset.title
     const projectInfo = this.dataset.info
     const technologies = this.dataset.technologies
-    const viewSourceLink = this.dataset.source
+    const exploreProductLink = this.dataset.product
     const viewCodebaseLink = this.dataset.codebase
     const projectImage = this.closest(".project").querySelector("img").src
 
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
       projectImage,
       projectInfo,
       technologies,
-      viewSourceLink,
+      exploreProductLink,
       viewCodebaseLink
     )
 
     // Add disabled-button class if the source or codebase links are empty
     const dialogButtons = dialog.querySelectorAll(".dialog-button")
-    if (!viewSourceLink) {
+    if (!exploreProductLink) {
       dialogButtons[0].classList.add("disabled-button")
     }
     if (!viewCodebaseLink) {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imageSrc,
     projectInfo,
     technologies,
-    viewSourceLink,
+    exploreProductLink,
     viewCodebaseLink
   ) {
     // Create the dialog element
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="project-details-dialog-text">${projectInfo}</p>
           <p class="project-details-dialog-tech"><strong>Tech Stack:</strong> ${technologies}</p>
           <div class="project-details-dialog-links">
-            <a href="${viewSourceLink}" target="_blank" class="dialog-button">Explore Product</a>
+            <a href="${exploreProductLink}" target="_blank" class="dialog-button">Explore Product</a>
             <a href="${viewCodebaseLink}" target="_blank" class="dialog-button">View Codebase</a>
           </div>
           <button class="dialog-close-button" ><i class="fa-sharp fa-solid fa-xmark"></i></button>
