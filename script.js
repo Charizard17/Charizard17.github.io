@@ -15,12 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const technologies = this.dataset.technologies
     const exploreProductLink = this.dataset.product
     const viewCodebaseLink = this.dataset.codebase
-    const projectImage = this.closest(".project").querySelector("img").src
+    const projectImages = this.dataset.images
+
+    // Check if the images attribute is defined and not empty
+    const imageSources =
+      projectImages && projectImages !== "" ? projectImages.split(",") : []
 
     // Create the project details dialog
     const dialog = createProjectDetailsDialog(
       projectTitle,
-      projectImage,
+      imageSources,
       projectInfo,
       technologies,
       exploreProductLink,
@@ -59,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to create the project details dialog
   function createProjectDetailsDialog(
     title,
-    imageSrc,
+    imageSources,
     projectInfo,
     technologies,
     exploreProductLink,
@@ -74,19 +78,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Create the dialog content
     const content = `
-          <img src="${imageSrc}" alt="Project Image" class="project-details-dialog-image" style="padding: 0;">
-          <h3 class="project-details-dialog-title">${title}</h3>
-          <p class="project-details-dialog-text">${projectInfo}</p>
-          <p class="project-details-dialog-tech"><strong>Tech Stack:</strong> ${technologies}</p>
-          <div class="project-details-dialog-links">
-            <a href="${exploreProductLink}" target="_blank" class="dialog-button">Explore Product</a>
-            <a href="${viewCodebaseLink}" target="_blank" class="dialog-button">View Codebase</a>
-          </div>
-          <button class="dialog-close-button" ><i class="fa-sharp fa-solid fa-xmark"></i></button>
-        `
+      <div class="project-details-dialog-slider">
+        <button class="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-button"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <h3 class="project-details-dialog-title">${title}</h3>
+      <p class="project-details-dialog-text">${projectInfo}</p>
+      <p class="project-details-dialog-tech"><strong>Tech Stack:</strong> ${technologies}</p>
+      <div class="project-details-dialog-links">
+        <a href="${exploreProductLink}" target="_blank" class="dialog-button">Explore Product</a>
+        <a href="${viewCodebaseLink}" target="_blank" class="dialog-button">View Codebase</a>
+      </div>
+      <button class="dialog-close-button"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+    `
 
     // Set the content of the dialog
     dialog.innerHTML = content
+
+    // Get the slider container
+    const sliderContainer = dialog.querySelector(
+      ".project-details-dialog-slider"
+    )
+
+    // Create the image slider
+    imageSources.forEach((src) => {
+      const img = document.createElement("img")
+      img.src = src
+      img.alt = "Project Image"
+      img.classList.add("slider-image")
+      sliderContainer.appendChild(img)
+    })
+
+    // Show the first image initially
+    const sliderImages = dialog.querySelectorAll(".slider-image")
+    sliderImages[0].classList.add("active")
+
+    // Function to show the current image
+    function showImage(index) {
+      sliderImages.forEach((img) => img.classList.remove("active"))
+      sliderImages[index].classList.add("active")
+    }
+
+    let currentIndex = 0
+
+    // Add event listener for previous button click
+    const prevButton = dialog.querySelector(".prev-button")
+    prevButton.addEventListener("click", function () {
+      currentIndex =
+        (currentIndex - 1 + sliderImages.length) % sliderImages.length
+      showImage(currentIndex)
+    })
+
+    // Add event listener for next button click
+    const nextButton = dialog.querySelector(".next-button")
+    nextButton.addEventListener("click", function () {
+      currentIndex = (currentIndex + 1) % sliderImages.length
+      showImage(currentIndex)
+    })
 
     return dialog
   }
