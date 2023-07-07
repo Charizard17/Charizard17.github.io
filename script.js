@@ -73,9 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const dialog = document.createElement("dialog")
     dialog.classList.add("project-details-dialog")
 
-    // Set the maximum width of the dialog
-    dialog.style.maxWidth = "600px"
-
     // Create the dialog content
     const content = `
       <div class="project-details-dialog-slider">
