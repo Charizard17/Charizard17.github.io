@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const exploreProductLink = this.dataset.product
     const viewCodebaseLink = this.dataset.codebase
     const projectImages = this.dataset.images
+    const projectLogo = this.dataset.logo
 
     // Check if the images attribute is defined and not empty
     const imageSources =
@@ -28,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
       projectInfo,
       technologies,
       exploreProductLink,
-      viewCodebaseLink
+      viewCodebaseLink,
+      projectLogo
     )
 
     // Add disabled-button class if the source or codebase links are empty
@@ -67,7 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
     projectInfo,
     technologies,
     exploreProductLink,
-    viewCodebaseLink
+    viewCodebaseLink,
+    projectLogo
   ) {
     // Create the dialog element
     const dialog = document.createElement("dialog")
@@ -79,7 +82,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <button class="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="next-button"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
-      <h3 class="project-details-dialog-title">${title}</h3>
+      <div class="project-details-dialog-title-logo-container">
+      ${
+        projectLogo
+          ? `<img src="${projectLogo}" alt="${title} Logo" class="project-details-dialog-app-logo">`
+          : ""
+      }
+        <h3 class="project-details-dialog-title">${title}</h3>
+      </div>
       <p class="project-details-dialog-text">${projectInfo}</p>
       <p class="project-details-dialog-tech"><strong>Tech Stack:</strong> ${technologies}</p>
       <div class="project-details-dialog-links">
