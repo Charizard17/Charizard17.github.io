@@ -241,12 +241,13 @@ body {
 
 .project-details-dialog-links {
   display: flex;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .project-details-dialog-links a {
-  flex-basis: 50%;
+  flex-basis: 100%;
   display: block;
+  background-color: blue;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -254,7 +255,6 @@ body {
 }
 
 .project-details-dialog-links a:first-child {
-  background-color: blue;
   border-bottom-left-radius: 10px;
   border-right: 0.5px solid white;
 }
@@ -264,7 +264,6 @@ body {
 }
 
 .project-details-dialog-links a:last-child {
-  background-color: blue;
   border-bottom-right-radius: 10px;
   border-left: 0.5px solid white;
 }
@@ -286,12 +285,6 @@ body {
 
 .dialog-close-button:hover {
   color: navy;
-}
-
-.disabled-button {
-  pointer-events: none;
-  cursor: default;
-  background-color: black !important;
 }
 
 .project-details-dialog-slider {

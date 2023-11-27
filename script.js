@@ -13,10 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectTitle = this.dataset.title
     const projectInfo = this.dataset.info
     const technologies = this.dataset.technologies
-    const exploreProductLink = this.dataset.product
-    const viewCodebaseLink = this.dataset.codebase
-    const projectImages = this.dataset.images
     const projectLogo = this.dataset.logo
+    const projectImages = this.dataset.images
+    const websiteLink = this.dataset.website
+    const codebaseLink = this.dataset.codebase
+    const appstoreLink = this.dataset.appstore
+    const playstoreLink = this.dataset.playstore
 
     // Check if the images attribute is defined and not empty
     const imageSources =
@@ -28,19 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
       imageSources,
       projectInfo,
       technologies,
-      exploreProductLink,
-      viewCodebaseLink,
-      projectLogo
+      projectLogo,
+      websiteLink,
+      codebaseLink,
+      appstoreLink,
+      playstoreLink
     )
-
-    // Add disabled-button class if the source or codebase links are empty
-    const dialogButtons = dialog.querySelectorAll(".dialog-button")
-    if (!exploreProductLink) {
-      dialogButtons[0].classList.add("disabled-button")
-    }
-    if (!viewCodebaseLink) {
-      dialogButtons[1].classList.add("disabled-button")
-    }
 
     // Append the dialog to the document body
     document.body.appendChild(dialog)
@@ -68,9 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
     imageSources,
     projectInfo,
     technologies,
-    exploreProductLink,
-    viewCodebaseLink,
-    projectLogo
+    projectLogo,
+    websiteLink,
+    codebaseLink,
+    appstoreLink,
+    playstoreLink
   ) {
     // Create the dialog element
     const dialog = document.createElement("dialog")
@@ -93,8 +90,26 @@ document.addEventListener("DOMContentLoaded", function () {
       <p class="project-details-dialog-text">${projectInfo}</p>
       <p class="project-details-dialog-tech"><strong>Tech Stack:</strong> ${technologies}</p>
       <div class="project-details-dialog-links">
-        <a href="${exploreProductLink}" target="_blank" class="dialog-button">Explore Product</a>
-        <a href="${viewCodebaseLink}" target="_blank" class="dialog-button">View Codebase</a>
+        ${
+          appstoreLink
+            ? `<a href="${appstoreLink}" target="_blank">App Store <i class="fa-brands fa-app-store-ios"></i></a>`
+            : ""
+        }
+        ${
+          playstoreLink
+            ? `<a href="${playstoreLink}" target="_blank">Play Store <i class="fa-brands fa-google-play"></i></a>`
+            : ""
+        }
+        ${
+          websiteLink
+            ? `<a href="${websiteLink}" target="_blank">Website <i class="fa-solid fa-globe"></i></a>`
+            : ""
+        }
+        ${
+          codebaseLink
+            ? `<a href="${codebaseLink}" target="_blank">GitHub <i class="fab fa-github"></i></a>`
+            : ""
+        }
       </div>
       <button class="dialog-close-button"><i class="fa-sharp fa-solid fa-xmark"></i></button>
     `
