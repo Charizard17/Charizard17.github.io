@@ -46,79 +46,29 @@ body {
   margin: 0;
 }
 
-.about-me {
-  margin-top: 10px;
-  text-align: justify;
-  margin-bottom: 15px;
-}
-
-.resume-link {
-  color: blue;
-  text-decoration: none;
-}
-
-.resume-link:hover {
-  color: navy;
-  text-decoration: underline;
-}
-
-.tech-stack,
-.languages,
-.contact-info,
 .links {
   margin-bottom: 10px;
   margin-top: 5px;
-  text-align: left;
 }
 
-.tech-stack b,
-.languages b,
-.contact-info b,
-.links b {
-  margin-right: 20px;
-}
-
-.languages span {
-  color: #777;
-}
-
-.contact-info span,
 .links span {
   margin-right: 40px;
 }
 
-.contact-info a,
 .links a {
   text-decoration: none;
-}
-
-.contact-info i {
-  font-size: 20px;
 }
 
 .links i {
   font-size: 25px;
 }
 
-.contact-info a i,
 .links a i {
   color: blue;
 }
 
-.contact-info a i:hover,
 .links a i:hover {
   color: navy;
-}
-
-.tech-stack h3,
-.languages h3 {
-  display: inline;
-  margin: 0;
-}
-
-.tech-stack p,
-.languages p {
-  margin: 0;
 }
 
 /* Projects Container  */
@@ -379,10 +329,6 @@ body {
     padding: 0px 10px;
   }
 
-  .about-me,
-  .tech-stack,
-  .languages,
-  .contact-info,
   .links {
     font-size: 16px;
   }
@@ -419,10 +365,6 @@ body {
     padding: 0px 10px;
   }
 
-  .about-me,
-  .tech-stack,
-  .languages,
-  .contact-info,
   .links {
     font-size: 18px;
   }
@@ -460,10 +402,6 @@ body {
     padding: 0px 0px;
   }
 
-  .about-me,
-  .tech-stack,
-  .languages,
-  .contact-info,
   .links {
     font-size: 20px;
   }
